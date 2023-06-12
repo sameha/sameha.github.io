@@ -7,9 +7,7 @@ layout: page
 <div id="results"></div>
 <script>
   async function loaded(reader) {
-    //const response = await fetch('https://sameha-bear-fastai.hf.space/run/predict', {
-    
-    const response = await fetch('https://omaraweidah-car-model-classifier.hf.space/run/predict', {
+    const response = await fetch('https://sameha-bear-fastai.hf.space/run/predict', {
       method: "POST", body: JSON.stringify({ "data": [reader.result] }),
       headers: { "Content-Type": "application/json" }
     });
